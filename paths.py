@@ -54,5 +54,5 @@ regression_info_dir = os.path.join(training_dir, 'catboost_info_fire_intensity_r
 cbm_dir = os.path.join(model_dir, 'cbm')
 os.makedirs(cbm_dir, exist_ok=True)
 
-classification_cbm_file = os.path.join(cbm_dir, 'fire_occurrence_classification_model.cbm')
-regression_cbm_file = os.path.join(cbm_dir, 'fire_intensity_regression_model.cbm')
+classifier_cbm_file = os.path.join(cbm_dir, 'fire_occurrence_classifier_model.cbm')
+regressor_cbm_file = os.path.join(cbm_dir, 'fire_intensity_regressor_model.cbm')
