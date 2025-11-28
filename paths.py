@@ -1,6 +1,6 @@
 import os
 
-# ---------- Data Directory
+# ---------- Data Directory ----------
 data_dir = os.path.join('data')
 
 # ----- Raw Directory
@@ -39,7 +39,16 @@ inpe_stations_linked_file = os.path.join(linked_dir, 'inpe_stations_linked.csv')
 
 inmet_inpe_linked_file = os.path.join(linked_dir, 'inmet_inpe_linked.csv')
 
-# ---------- Model Directory
+# ---------- Visualization Directory ----------
+visualization_dir = os.path.join('visualizations')
+os.makedirs(visualization_dir, exist_ok=True)
+
+monthly_fires_file = os.path.join(visualization_dir, 'monthly_fires.png')
+yearly_fires_file = os.path.join(visualization_dir, 'yearly_fires.png')
+monthly_intensity_file = os.path.join(visualization_dir, 'monthly_intensity.png')
+yearly_intensity_file = os.path.join(visualization_dir, 'yearly_intensity.png')
+
+# ---------- Model Directory ----------
 model_dir = os.path.join('models')
 os.makedirs(model_dir, exist_ok=True)
 
