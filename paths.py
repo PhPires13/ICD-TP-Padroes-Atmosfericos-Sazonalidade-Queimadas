@@ -3,13 +3,21 @@ import os
 
 data_path = os.path.join('data')
 
-# ---------- Raw Folders
-raw_path = os.path.join(data_path, 'raw_data')
+# ---------- Raw Folder
+raw_path = os.path.join(data_path, 'raw')
 
 raw_inmet_folder = os.path.join(raw_path, 'inmet')
 
 raw_inpe_folder = os.path.join(raw_path, 'inpe')
 raw_inpe_all_folder = os.path.join(raw_inpe_folder, 'todos-sats')
+
+# ---------- Raw Fixed Folder
+raw_fixed_path = os.path.join(data_path, 'raw_fixed')
+
+raw_fixed_inmet_folder = os.path.join(raw_fixed_path, 'inmet')
+
+raw_fixed_inpe_folder = os.path.join(raw_fixed_path, 'inpe')
+raw_fixed_inpe_all_folder = os.path.join(raw_fixed_inpe_folder, 'todos-sats')
 
 # ---------- Concat Folder
 concat_path = os.path.join(data_path, 'concat')
